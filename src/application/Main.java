@@ -8,11 +8,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static javafx.application.Application.launch;
-
 public class Main extends Application {
 
-    public static Stage stage;
+    private static Stage stage;
     private static BorderPane mainlayout;
 
     @Override
@@ -25,7 +23,7 @@ public class Main extends Application {
 
     }
 
-    public static void showMain() throws IOException {
+    private static void showMain() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/MainView.fxml"));
         mainlayout = loader.load();
@@ -34,7 +32,7 @@ public class Main extends Application {
         stage.show();
     }
 
-    public static void showLogin() throws IOException {
+    private static void showLogin() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/Login.fxml"));
         BorderPane mainItem = loader.load();
