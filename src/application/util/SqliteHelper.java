@@ -8,8 +8,8 @@ public class SqliteHelper {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:database.sqlite");
-            return conn;
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:database.sqlite");
+            return connection;
 
         } catch (Exception e) {
             System.out.println();
