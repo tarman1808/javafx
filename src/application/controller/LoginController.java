@@ -1,5 +1,6 @@
 package application.controller;
 
+import application.Main;
 import application.model.LoginModel;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -8,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class LoginController {
 

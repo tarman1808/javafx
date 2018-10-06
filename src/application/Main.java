@@ -1,5 +1,6 @@
 package application;
 
+import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -9,7 +10,7 @@ import java.io.IOException;
 
 import static javafx.application.Application.launch;
 
-public class Main {
+public class Main extends Application {
 
     public static Stage stage;
     private static BorderPane mainlayout;
@@ -49,7 +50,7 @@ public class Main {
 
     }
 
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         launch(args);
     }
 }
