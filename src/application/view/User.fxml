@@ -20,7 +20,7 @@
 
 <BorderPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
     <top>
-        <Pane maxHeight="40.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #B40404;" BorderPane.alignment="CENTER">
+        <Pane maxHeight="40.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #B40404;" BorderPane.alignment="CENTER">
             <BorderPane.margin>
                 <Insets />
             </BorderPane.margin>
@@ -29,9 +29,9 @@
     <center>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #730001;" BorderPane.alignment="CENTER">
             <children>
-                <Pane layoutY="-40.0" maxWidth="100.0" prefHeight="600.0" prefWidth="100.0" style="-fx-background-color: #343230;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-40.0" />
-                <Separator layoutX="274.0" layoutY="279.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" />
-                <TabPane layoutX="100.0" layoutY="280.0" prefHeight="280.0" prefWidth="700.0" style="-fx-background-color: #FFF7F3;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="280.0">
+                <Pane layoutY="-40.0" maxWidth="75.0" prefHeight="600.0" prefWidth="75.0" style="-fx-background-color: #343230;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-40.0" />
+                <Separator layoutX="274.0" layoutY="279.0" prefWidth="200.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" />
+                <TabPane layoutX="100.0" layoutY="280.0" prefHeight="280.0" prefWidth="700.0" style="-fx-background-color: #FFF7F3;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0">
                     <tabs>
                         <Tab text="Oustanding SO">
                             <content>
@@ -66,7 +66,7 @@
                         </Tab>
                     </tabs>
                 </TabPane>
-                <ToolBar maxHeight="40.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <ToolBar maxHeight="40.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="1202.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="-22.0" AnchorPane.topAnchor="0.0">
                     <items>
                         <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-radius: 50;">
                             <graphic>
@@ -76,7 +76,7 @@
                         <TextField promptText="search" style="-fx-background-radius: 10;" />
                     </items>
                 </ToolBar>
-                <TableView layoutX="447.0" layoutY="40.0" maxHeight="225.0" prefHeight="225.0" prefWidth="1180.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0">
+                <TableView layoutX="75.0" layoutY="40.0" maxHeight="225.0" prefHeight="225.0" prefWidth="1205.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0">
                     <columns>
                         <TableColumn editable="false" prefWidth="23.66998291015625" sortable="false" />
                         <TableColumn editable="false" prefWidth="127.0" text="Nomor SO" />

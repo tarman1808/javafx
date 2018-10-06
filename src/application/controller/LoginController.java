@@ -32,10 +32,11 @@ public class LoginController {
     void goLogin() throws IOException {
         try {
             if (loginModel.isLoginValid(usernametf.getText(), passwordtf.getText())) {
-                Main.showHome();
+                Main.showUser();
             } else {
                 errorLogin.setText("Error! Invalid Username or Password");
             }
+
         } catch (SQLException e) {
             errorLogin.setText("Error! Invalid Username or Password");
             e.printStackTrace();

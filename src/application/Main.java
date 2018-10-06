@@ -42,9 +42,17 @@ public class Main extends Application {
 
     }
 
-    public static void showHome() throws IOException {
+    public static void showUser() throws IOException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/Home.fxml"));
+        loader.setLocation(Main.class.getResource("view/User.fxml"));
+        BorderPane mainItem = loader.load();
+        mainlayout.setCenter(mainItem);
+
+    }
+
+    public static void showAdmin() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/Admin.fxml"));
         BorderPane mainItem = loader.load();
         mainlayout.setCenter(mainItem);
 
