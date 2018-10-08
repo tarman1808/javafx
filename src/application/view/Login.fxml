@@ -17,7 +17,7 @@
             <HBox maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
                <children>
                   <FontAwesomeIconView glyphName="USER" size="32" style="-fx-fill: WHITE;" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="317.0" promptText="Username">
+                  <JFXTextField fx:id="usernametf" focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="317.0" promptText="Username">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -30,7 +30,7 @@
             <HBox layoutX="10.0" layoutY="10.0" maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
                <children>
                   <FontAwesomeIconView glyphName="LOCK" size="32" style="-fx-fill: WHITE;" />
-                  <JFXPasswordField focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="317.0" promptText="Password">
+                  <JFXPasswordField fx:id="passwordtf" focusColor="WHITE" labelFloat="true" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="317.0" promptText="Password">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -40,7 +40,7 @@
                   <Insets top="20.0" />
                </VBox.margin>
             </HBox>
-            <JFXButton prefHeight="25.0" prefWidth="315.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Login">
+            <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="315.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Login">
                <VBox.margin>
                   <Insets left="20.0" right="20.0" top="10.0" />
                </VBox.margin>
