@@ -13,7 +13,6 @@ import java.sql.SQLException;
 
 public class LoginController {
 
-
     LoginModel loginModel = new LoginModel();
 
     @FXML
