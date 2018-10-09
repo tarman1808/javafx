@@ -1,18 +1,11 @@
+
+/*
 .root {
-    -fx-background-image: url("../assets/bg.png");  
+    -fx-background-image: url("../assets/bg3.jpg");  
     -fx-background-position: center center;
-
-    
-    
 }
-
-
-.font_fill{
-    -fx-fill: whitesmoke;
+*/
+.glasss{
+    -fx-background-color: rgba(0, 50, 50, 0.5); 
+    -fx-background-radius: 10;
 }
-
-.blur_bg{
-    -fx-background-image: url("../assets/blur2.png"); 
-}
-
-
