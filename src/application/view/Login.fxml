@@ -13,12 +13,12 @@
 
 <BorderPane maxHeight="300.0" maxWidth="300.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: peach; -fx-background-radius: 20; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
    <center>
-      <VBox alignment="CENTER" maxHeight="200.0" maxWidth="300.0" prefHeight="200.0" prefWidth="271.0">
+      <VBox alignment="CENTER" maxHeight="200.0" maxWidth="200.0" prefHeight="200.0" prefWidth="200.0">
          <children>
-            <HBox maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
+            <HBox maxHeight="33.0" prefHeight="25.0" prefWidth="200.0">
                <children>
                   <FontAwesomeIconView glyphName="USER" size="32" style="-fx-fill: grey;" />
-                  <JFXTextField fx:id="usernametf" focusColor="BLACK" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Username">
+                  <JFXTextField fx:id="usernametf" focusColor="BLACK" labelFloat="true" prefHeight="27.0" prefWidth="200.0" promptText="Username">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -31,7 +31,7 @@
             <HBox layoutX="10.0" layoutY="10.0" maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
                <children>
                   <FontAwesomeIconView glyphName="LOCK" size="32" style="-fx-fill: grey;" />
-                  <JFXPasswordField fx:id="passwordtf" focusColor="BLACK" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Password">
+                  <JFXPasswordField fx:id="passwordtf" focusColor="BLACK" labelFloat="true" prefHeight="27.0" prefWidth="200.0" promptText="Password">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -49,11 +49,8 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXButton>
-            <Label textFill="RED" wrapText="true" />
+            <Label fx:id="errorLogin" textFill="RED" wrapText="true" />
          </children>
-         <BorderPane.margin>
-            <Insets left="30.0" right="30.0" />
-         </BorderPane.margin>
       </VBox>
    </center>
 </BorderPane>
