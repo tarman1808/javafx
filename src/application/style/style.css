@@ -1,6 +1,18 @@
 .root {
     -fx-background-image: url("../assets/bg.png");  
     -fx-background-position: center center;
+
     
     
 }
+
+
+.font_fill{
+    -fx-fill: whitesmoke;
+}
+
+.blur_bg{
+    -fx-background-image: url("../assets/blur2.png"); 
+}
+
+
