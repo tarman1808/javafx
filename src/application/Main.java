@@ -7,6 +7,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import javafx.scene.effect.BoxBlur;
 
 public class Main extends Application {
 
@@ -33,10 +34,16 @@ public class Main extends Application {
     }
 
     private static void showLogin() throws IOException {
+        BoxBlur blur = new BoxBlur(3, 3, 3);
+        
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/Login.fxml"));
         BorderPane mainItem = loader.load();
         mainlayout.setCenter(mainItem);
+        
+        
+        
+        
 
     }
 
