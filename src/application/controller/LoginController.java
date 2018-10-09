@@ -38,7 +38,6 @@ public class LoginController {
 
         } catch (SQLException e) {
             errorLogin.setText("Error! Invalid Username or Password");
-            e.printStackTrace();
         }
     }
 }
