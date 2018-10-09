@@ -1,10 +1,9 @@
 
-/*
+
 .root {
-    -fx-background-image: url("../assets/bg3.jpg");  
-    -fx-background-position: center center;
+    -fx-background-image: url("../assets/bg5.jpg");  
 }
-*/
+
 .glasss{
     -fx-background-color: rgba(0, 50, 50, 0.5); 
     -fx-background-radius: 10;

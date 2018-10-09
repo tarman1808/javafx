@@ -17,7 +17,7 @@
    <children>
       <Pane maxHeight="350.0" maxWidth="300.0" prefHeight="350.0" prefWidth="300.0">
          <children>
-            <VBox alignment="CENTER" layoutY="70.0" maxHeight="250.0" maxWidth="300.0" prefHeight="250.0" prefWidth="300.0" spacing="10.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-border-width: 2px;">
+            <VBox alignment="CENTER" layoutY="70.0" maxHeight="250.0" maxWidth="300.0" prefHeight="250.0" prefWidth="300.0" spacing="10.0">
                <children>
                   <HBox maxHeight="33.0" prefHeight="25.0" prefWidth="200.0">
                      <children>
@@ -59,7 +59,7 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </VBox>
-            <Pane layoutX="100.0" maxHeight="100.0" maxWidth="100.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: grey; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50; -fx-border-width: 2;">
+            <Pane layoutX="100.0" maxHeight="100.0" maxWidth="100.0" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-color: grey; -fx-background-radius: 50;">
                <children>
                   <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="18.0" layoutY="78.0" size="82" />
                </children>
