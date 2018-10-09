@@ -5,60 +5,55 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="300.0" maxWidth="300.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+<BorderPane maxHeight="300.0" maxWidth="300.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: peach; -fx-background-radius: 20; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
    <center>
-      <StackPane BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="200.0" maxWidth="300.0" prefHeight="200.0" prefWidth="271.0">
          <children>
-            <Pane>
+            <HBox maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
                <children>
-                  <VBox alignment="CENTER" layoutX="50.0" layoutY="40.0" maxHeight="200.0" maxWidth="300.0" prefHeight="300.0" prefWidth="200.0">
-                     <children>
-                        <HBox maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
-                           <children>
-                              <FontAwesomeIconView glyphName="USER" size="32" style="-fx-fill: grey;" />
-                              <JFXTextField fx:id="usernametf" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Username">
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </JFXTextField>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="10.0" />
-                           </VBox.margin>
-                        </HBox>
-                        <HBox layoutX="10.0" layoutY="10.0" maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
-                           <children>
-                              <FontAwesomeIconView glyphName="LOCK" size="32" style="-fx-fill: grey;" />
-                              <JFXPasswordField fx:id="passwordtf" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Password">
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </JFXPasswordField>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </HBox>
-                        <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="315.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Login">
-                           <VBox.margin>
-                              <Insets left="20.0" right="20.0" top="10.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="System Bold" size="12.0" />
-                           </font>
-                        </JFXButton>
-                     </children>
-                  </VBox>
+                  <FontAwesomeIconView glyphName="USER" size="32" style="-fx-fill: grey;" />
+                  <JFXTextField fx:id="usernametf" focusColor="BLACK" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Username">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
                </children>
-            </Pane>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" maxHeight="25.0" prefHeight="25.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView glyphName="LOCK" size="32" style="-fx-fill: grey;" />
+                  <JFXPasswordField fx:id="passwordtf" focusColor="BLACK" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Password">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </JFXPasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="315.0" ripplerFill="#06f5f5" style="-fx-background-color: grey; -fx-background-radius: 10;" text="Login">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label textFill="RED" wrapText="true" />
          </children>
-      </StackPane>
+         <BorderPane.margin>
+            <Insets left="30.0" right="30.0" />
+         </BorderPane.margin>
+      </VBox>
    </center>
 </BorderPane>
