@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import javafx.scene.layout.AnchorPane;
 
 public class LoginController {
 
@@ -26,6 +27,9 @@ public class LoginController {
 
     @FXML
     private Label errorLogin;
+    
+    @FXML
+    private AnchorPane loginpane;
 
     @FXML
     void goLogin() throws IOException {
