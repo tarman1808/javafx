@@ -39,7 +39,7 @@ public class Main extends Application {
 
     private static void showLogin() throws IOException {
 
-        
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/Login.fxml"));
         AnchorPane mainItem = loader.load();
