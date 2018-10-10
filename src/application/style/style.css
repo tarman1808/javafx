@@ -1,10 +1,18 @@
 
 
 .root {
-    -fx-background-image: url("../assets/bg5.jpg");  
+    -fx-background-image: url("../assets/bg.jpg");
+    -fx-background-size: 100% 100% ;
 }
 
 .glasss{
     -fx-background-color: rgba(0, 50, 50, 0.5); 
     -fx-background-radius: 10;
+}
+
+.login_bg{
+    -fx-background-image: url("../assets/blur.jpg");
+    -fx-background-size: 100% 100% ;
+    -fx-background-image-radius : 20px;
+    -fx-border-radius : 20px;
 }
