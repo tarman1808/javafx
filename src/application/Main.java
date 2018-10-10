@@ -7,9 +7,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import javafx.scene.effect.BoxBlur;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
 
 public class Main extends Application {
 
@@ -40,10 +38,7 @@ public class Main extends Application {
     }
 
     private static void showLogin() throws IOException {
-<<<<<<< HEAD
-        
-=======
->>>>>>> 685c50dc2890ca545dbcaee92e93fef1576c741e
+
         
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/Login.fxml"));
