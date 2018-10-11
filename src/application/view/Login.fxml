@@ -6,7 +6,9 @@
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -17,49 +19,58 @@
 
 <AnchorPane maxHeight="350.0" maxWidth="300.0" prefWidth="300.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
    <children>
-      <StackPane />
-      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#d9d9d95f" height="276.0" layoutY="45.0" stroke="#fffcfc" strokeWidth="2.0" width="300.0">
+      <StackPane style="-fx-background-color: transparent;" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#00fff604" height="276.0" layoutY="45.0" stroke="#fffcfc" width="300.0">
          <effect>
-            <GaussianBlur />
+            <DropShadow />
          </effect>
       </Rectangle>
-      <Pane maxHeight="350.0" maxWidth="300.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="login_pane" stylesheets="@../style/style.css">
+      <Pane maxHeight="350.0" maxWidth="300.0" prefHeight="350.0" prefWidth="300.0">
          <children>
-            <VBox alignment="CENTER" layoutY="44.0" maxHeight="276.0" maxWidth="300.0" prefHeight="276.0" prefWidth="300.0" spacing="10.0" style="-fx-background-radius: 20; -fx-border-color: white; -fx-border-width: 2px; -fx-background-color: transparent; -fx-border-radius: 20;">
+            <VBox alignment="CENTER" layoutY="44.0" maxHeight="276.0" maxWidth="300.0" prefHeight="276.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: transparent;">
                <children>
-                  <HBox maxHeight="33.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-radius: 20;">
+                  <HBox maxHeight="25.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-radius: 20; -fx-background-color: transparent;">
                      <children>
                         <FontAwesomeIconView glyphName="USER" size="32" style="-fx-fill: white;">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
                         </FontAwesomeIconView>
-                        <JFXTextField fx:id="usernametf" focusColor="#f7f7f7" labelFloat="true" prefHeight="27.0" prefWidth="186.0" promptText="Username" unFocusColor="WHITE" />
+                        <JFXTextField fx:id="usernametf" focusColor="#f7f7f7" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Username" stylesheets="@../style/style.css" unFocusColor="#fffbfb">
+                           <font>
+                              <Font size="14.0" />
+                           </font></JFXTextField>
                      </children>
                      <VBox.margin>
                         <Insets left="30.0" right="30.0" top="45.0" />
                      </VBox.margin>
                   </HBox>
-                  <HBox layoutX="10.0" layoutY="10.0" maxHeight="25.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-radius: 20;">
+                  <HBox layoutX="10.0" layoutY="10.0" maxHeight="25.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-radius: 20; -fx-background-color: transparent;">
                      <children>
                         <FontAwesomeIconView glyphName="LOCK" size="32" style="-fx-fill: white;">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
                         </FontAwesomeIconView>
-                        <JFXPasswordField fx:id="passwordtf" focusColor="#fffbfb" labelFloat="true" prefHeight="27.0" prefWidth="285.0" promptText="Password" unFocusColor="WHITE" />
+                        <JFXPasswordField fx:id="passwordtf" focusColor="#fffbfb" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Password" styleClass="text-field" stylesheets="@../style/style.css" unFocusColor="#fffbfb">
+                           <font>
+                              <Font size="14.0" />
+                           </font></JFXPasswordField>
                      </children>
                      <VBox.margin>
                         <Insets left="30.0" right="30.0" top="20.0" />
                      </VBox.margin>
                   </HBox>
-                  <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="315.0" ripplerFill="#06f5f5" style="-fx-background-color: grey; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+                  <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="132.0" ripplerFill="#e8ee29" text="Login">
                      <VBox.margin>
                         <Insets left="20.0" right="20.0" top="10.0" />
                      </VBox.margin>
                      <font>
-                        <Font name="System Bold" size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
                   </JFXButton>
                   <Label fx:id="errorLogin" textFill="RED" wrapText="true" />
                </children>
@@ -67,11 +78,15 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </VBox>
-            <Pane layoutX="100.0" maxHeight="100.0" maxWidth="100.0" prefHeight="100.0" prefWidth="100.0" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-color: grey; -fx-background-radius: 50;">
-               <children>
-                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="18.0" layoutY="79.0" size="82" />
-               </children>
-            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="50.0" layoutY="-40.0" maxHeight="80.0" maxWidth="200.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.topAnchor="-33.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

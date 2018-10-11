@@ -5,30 +5,9 @@
         -fx-blue: #1976D2;
         -fx-red: #FF0000;
         -fx-color-1:#1976D2;
-
-
 }
 
-.root {
-    /*
-    -fx-background-image: url("../assets/bg.jpg");
-    -fx-background-size: 100% 100% ;
-    */
-    -fx-background-color : -fx-primary
-}
-
-.glasss{
-    -fx-background-color: rgba(0, 50, 50, 0.5); 
-    -fx-background-radius: 10;
-}
-
-.login_bg{
+.root{
     -fx-background-image: url("../assets/blur.jpg");
-    -fx-background-size: 100% 100% ;
-    -fx-background-image-radius : 20px;
-    -fx-border-radius : 20px;
-}
-.login_pane {
-
-    -fx-background-color : -fx-primary
+    -fx-background-position: 100% 100% ;
 }
