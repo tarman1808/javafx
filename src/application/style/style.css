@@ -1,8 +1,20 @@
+{
+        -fx-primary : #2A2E37;
+        -fx-secondary : #FFFF8D;
+        -fx-primarytext : #B2B2B2;
+        -fx-blue: #1976D2;
+        -fx-red: #FF0000;
+        -fx-color-1:#1976D2;
 
+
+}
 
 .root {
+    /*
     -fx-background-image: url("../assets/bg.jpg");
     -fx-background-size: 100% 100% ;
+    */
+    -fx-background-color : -fx-primary
 }
 
 .glasss{
@@ -15,4 +27,8 @@
     -fx-background-size: 100% 100% ;
     -fx-background-image-radius : 20px;
     -fx-border-radius : 20px;
+}
+.login_pane {
+
+    -fx-background-color : -fx-primary
 }

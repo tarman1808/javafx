@@ -17,13 +17,13 @@
 
 <AnchorPane maxHeight="350.0" maxWidth="300.0" prefWidth="300.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
    <children>
-      <StackPane style="-fx-background-color: transparent;" />
+      <StackPane />
       <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#d9d9d95f" height="276.0" layoutY="45.0" stroke="#fffcfc" strokeWidth="2.0" width="300.0">
          <effect>
             <GaussianBlur />
          </effect>
       </Rectangle>
-      <Pane maxHeight="350.0" maxWidth="300.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
+      <Pane maxHeight="350.0" maxWidth="300.0" prefHeight="350.0" prefWidth="300.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" styleClass="login_pane" stylesheets="@../style/style.css">
          <children>
             <VBox alignment="CENTER" layoutY="44.0" maxHeight="276.0" maxWidth="300.0" prefHeight="276.0" prefWidth="300.0" spacing="10.0" style="-fx-background-radius: 20; -fx-border-color: white; -fx-border-width: 2px; -fx-background-color: transparent; -fx-border-radius: 20;">
                <children>
