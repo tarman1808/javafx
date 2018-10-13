@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.stage.StageStyle.TRANSPARENT;
+
 public class Main extends Application {
 
     private static Stage stage;
@@ -18,11 +20,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-//        primaryStage.initStyle(TRANSPARENT);
+        primaryStage.initStyle(TRANSPARENT);
 
         Main.stage = primaryStage;
         Main.stage.setTitle("Karawang");
-//        stage.initStyle(TRANSPARENT);
+        stage.initStyle(TRANSPARENT);
         stage.setMaximized(true);
         Main.showMain();
         Main.showLogin();
