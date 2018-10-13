@@ -11,3 +11,7 @@
     -fx-background-image: url("../assets/blur.jpg");
     -fx-background-position: 100% 100% ;
 }
+
+.jfx-textfield{
+    -jfx-prompt-text-fill: white;
+}

@@ -8,6 +8,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.StageStyle;
+
+import static javafx.stage.StageStyle.TRANSPARENT;
 
 public class Main extends Application {
 
@@ -17,10 +20,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        
-        
+
+//        primaryStage.initStyle(TRANSPARENT);
+
         Main.stage = primaryStage;
         Main.stage.setTitle("Karawang");
+//        stage.initStyle(TRANSPARENT);
         stage.setMaximized(true);
         Main.showMain();
         Main.showLogin();

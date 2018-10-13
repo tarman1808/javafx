@@ -36,7 +36,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </FontAwesomeIconView>
-                        <JFXTextField fx:id="usernametf" focusColor="#f7f7f7" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Username" stylesheets="@../style/style.css" unFocusColor="#fffbfb">
+                        <JFXTextField fx:id="usernametf" focusColor="#f7f7f7" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Username" unFocusColor="#fffbfb">
                            <font>
                               <Font size="14.0" />
                            </font></JFXTextField>
@@ -52,7 +52,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </FontAwesomeIconView>
-                        <JFXPasswordField fx:id="passwordtf" focusColor="#fffbfb" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Password" styleClass="text-field" stylesheets="@../style/style.css" unFocusColor="#fffbfb">
+                        <JFXPasswordField fx:id="passwordtf" focusColor="#fffbfb" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Password" styleClass="text-field" unFocusColor="#fffbfb">
                            <font>
                               <Font size="14.0" />
                            </font></JFXPasswordField>
@@ -61,7 +61,7 @@
                         <Insets left="30.0" right="30.0" top="20.0" />
                      </VBox.margin>
                   </HBox>
-                  <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="132.0" ripplerFill="#e8ee29" text="Login">
+                  <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="132.0" ripplerFill="#00dcf5" style="-fx-border-radius: 10; -fx-border-width: 2px; -fx-border-color: azure;" text="Login" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="20.0" right="20.0" top="10.0" />
                      </VBox.margin>
