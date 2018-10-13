@@ -52,7 +52,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </FontAwesomeIconView>
-                        <JFXPasswordField fx:id="passwordtf" focusColor="#fffbfb" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Password" styleClass="text-field" unFocusColor="#fffbfb">
+                        <JFXPasswordField fx:id="passwordtf" focusColor="#fffbfb" labelFloat="true" maxWidth="169.0" prefHeight="27.0" prefWidth="169.0" promptText="Password" style="-fx-border-width: 0px 2px 0px 0px;" unFocusColor="#fffbfb">
                            <font>
                               <Font size="14.0" />
                            </font></JFXPasswordField>

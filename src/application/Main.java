@@ -3,14 +3,11 @@ package application;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.StageStyle;
-
-import static javafx.stage.StageStyle.TRANSPARENT;
 
 public class Main extends Application {
 
