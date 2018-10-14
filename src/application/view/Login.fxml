@@ -61,7 +61,7 @@
                         <Insets left="30.0" right="30.0" top="20.0" />
                      </VBox.margin>
                   </HBox>
-                  <JFXButton fx:id="loginbtn" onAction="#goLogin" prefHeight="25.0" prefWidth="132.0" ripplerFill="#00dcf5" style="-fx-border-radius: 10; -fx-border-width: 2px; -fx-border-color: azure;" text="Login" textFill="WHITE">
+                  <JFXButton fx:id="loginbtn" maxHeight="34.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goLogin" prefHeight="34.0" prefWidth="132.0" ripplerFill="#00dcf5" style="-fx-border-radius: 10; -fx-background-radius: 2px; -fx-border-width: 2px; -fx-border-color: white;" text="Login" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="20.0" right="20.0" top="10.0" />
                      </VBox.margin>
@@ -71,8 +71,14 @@
                      <effect>
                         <DropShadow />
                      </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
                   </JFXButton>
-                  <Label fx:id="errorLogin" textFill="RED" wrapText="true" />
+                  <Label fx:id="errorLogin" textFill="#a82121" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
                </children>
                <padding>
                   <Insets left="20.0" right="20.0" />
@@ -80,7 +86,7 @@
             </VBox>
          </children>
       </Pane>
-      <Pane layoutX="50.0" layoutY="-40.0" maxHeight="80.0" maxWidth="200.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.topAnchor="-33.0">
+      <Pane layoutX="50.0" layoutY="-40.0" maxHeight="80.0" maxWidth="200.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.topAnchor="-52.0">
          <children>
             <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
