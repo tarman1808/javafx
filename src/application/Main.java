@@ -9,22 +9,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static javafx.stage.StageStyle.TRANSPARENT;
+//import static javafx.stage.StageStyle.TRANSPARENT;
 
 public class Main extends Application {
 
     private static Stage stage;
     private static BorderPane mainlayout;
-    
 
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-        primaryStage.initStyle(TRANSPARENT);
+       // primaryStage.initStyle(TRANSPARENT);
 
         Main.stage = primaryStage;
         Main.stage.setTitle("Karawang");
-        stage.initStyle(TRANSPARENT);
+        //stage.initStyle(TRANSPARENT);
         stage.setMaximized(true);
         Main.showMain();
         Main.showLogin();
@@ -32,7 +31,7 @@ public class Main extends Application {
     }
 
     private static void showMain() throws IOException {
-        
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/MainView.fxml"));
         mainlayout = loader.load();
@@ -43,12 +42,11 @@ public class Main extends Application {
 
     private static void showLogin() throws IOException {
 
-
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/Login.fxml"));
         AnchorPane mainItem = loader.load();
         mainlayout.setCenter(mainItem);
-        
+
     }
 
     public static void showUser() throws IOException {
