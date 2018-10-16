@@ -5,7 +5,6 @@
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TableColumn?>
@@ -24,11 +23,10 @@
          <children>
             <HBox alignment="CENTER" layoutX="468.0" layoutY="7.0">
                <children>
-                  <Label text="search" />
-                  <JFXTextField prefHeight="27.0" prefWidth="345.0" promptText="Search" />
+                  <JFXTextField alignment="CENTER_RIGHT" focusColor="WHITE" prefHeight="27.0" prefWidth="345.0" promptText="Search" unFocusColor="WHITE" />
                   <Button maxHeight="27.0" maxWidth="27.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: transparent;" text="Search">
                      <graphic>
-                        <FontAwesomeIconView glyphName="SEARCH" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="14" />
                      </graphic>
                   </Button>
                </children>
@@ -40,10 +38,10 @@
         <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #730001;" BorderPane.alignment="CENTER">
             <children>
                 <Separator layoutX="274.0" layoutY="279.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                <TableView layoutY="36.0" maxHeight="269.0" prefHeight="269.0" prefWidth="1280.0" AnchorPane.bottomAnchor="491.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <TableView layoutY="36.0" maxHeight="269.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                        <TableColumn editable="false" prefWidth="23.66998291015625" sortable="false" />
-                        <TableColumn editable="false" prefWidth="127.0" text="Nomor SO" />
+                        <TableColumn editable="false" maxWidth="26.0" minWidth="26.0" prefWidth="26.0" resizable="false" sortable="false" />
+                        <TableColumn editable="false" prefWidth="230.0" text="Nomor SO" />
                         <TableColumn editable="false" prefWidth="93.0" text="Reproses So" />
                         <TableColumn editable="false" prefWidth="109.0" text="Prioritas So" />
                         <TableColumn editable="false" prefWidth="75.0" text="Tanggal SO" />
