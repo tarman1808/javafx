@@ -1,3 +1,4 @@
+/*
 {
         -fx-primary : #2A2E37;
         -fx-secondary : #FFFF8D;
@@ -6,12 +7,9 @@
         -fx-red: #FF0000;
         -fx-color-1:#1976D2;
 }
+*/
 
 .root{
     -fx-background-image: url("../assets/blur.jpg");
     -fx-background-position: 100% 100% ;
-}
-
-.jfx-textfield{
-    -jfx-prompt-text-fill: white;
 }
