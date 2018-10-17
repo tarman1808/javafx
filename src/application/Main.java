@@ -51,7 +51,7 @@ public class Main extends Application {
 
     public static void showUser() throws IOException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/Home.fxml"));
+        loader.setLocation(Main.class.getResource("view/User.fxml"));
         AnchorPane mainItem = loader.load();
         mainlayout.setCenter(mainItem);
 
