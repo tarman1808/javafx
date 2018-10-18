@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="500.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="500.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.Input_fkmController">
    <children>
       <Pane maxHeight="40.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-border-color: white; -fx-background-color: #24d0f4; -fx-background-radius: 15; -fx-border-radius: 10;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -44,31 +44,31 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXComboBox focusColor="WHITE" labelFloat="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Nama TSF" unFocusColor="WHITE" GridPane.rowIndex="1">
+                  <JFXComboBox fx:id="cbTsf" focusColor="WHITE" labelFloat="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Nama TSF" unFocusColor="WHITE" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                   </JFXComboBox>
-                  <JFXTimePicker defaultColor="#00d4ff" promptText="Jam Visit" GridPane.columnIndex="1" />
-                  <JFXComboBox focusColor="WHITE" labelFloat="true" layoutX="156.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Tindakan" unFocusColor="WHITE" GridPane.columnIndex="2" />
-                  <JFXComboBox focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Hasil Kunj." unFocusColor="WHITE" GridPane.columnIndex="3" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="31.0" promptText="No Log FKM" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="156.0" layoutY="113.0" promptText="S/N Terpasang" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="113.0" promptText="Simcard Terpasang" unFocusColor="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="113.0" promptText="S/N Lama" unFocusColor="WHITE" GridPane.rowIndex="2" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="195.0" promptText="Simcard Lama" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <JFXComboBox focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Tipe Paperroll" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="31.0" promptText="Qty Paperroll" unFocusColor="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="448.0" layoutY="195.0" promptText="PIC Name" unFocusColor="WHITE" GridPane.rowIndex="3" />
-                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="277.0" promptText="NO Tlp PIC " unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <JFXTextArea focusColor="WHITE" labelFloat="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="189.0" promptText="Remark Saat Visit" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-                  <JFXDatePicker defaultColor="#00d4ff" promptText="Tgl Visit" />
+                  <JFXTimePicker fx:id="tfJamVisit" defaultColor="#00d4ff" promptText="Jam Visit" GridPane.columnIndex="1" />
+                  <JFXComboBox fx:id="cbTindakan" focusColor="WHITE" labelFloat="true" layoutX="156.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Tindakan" unFocusColor="WHITE" GridPane.columnIndex="2" />
+                  <JFXComboBox fx:id="cbHasilKunj" focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Hasil Kunj." unFocusColor="WHITE" GridPane.columnIndex="3" />
+                  <JFXTextField fx:id="tfNoLogFkm" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="31.0" promptText="No Log FKM" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="tfSnTerpasang" focusColor="WHITE" labelFloat="true" layoutX="156.0" layoutY="113.0" promptText="S/N Terpasang" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="tfSimTerpasang" focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="113.0" promptText="Simcard Terpasang" unFocusColor="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="tfSnLama" focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="113.0" promptText="S/N Lama" unFocusColor="WHITE" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="tfSimLama" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="195.0" promptText="Simcard Lama" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXComboBox fx:id="cbPaperroll" focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Tipe Paperroll" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="cbQtyPaperroll" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="31.0" promptText="Qty Paperroll" unFocusColor="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="tfPicName" focusColor="WHITE" labelFloat="true" layoutX="448.0" layoutY="195.0" promptText="PIC Name" unFocusColor="WHITE" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="tfTlpPic" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="277.0" promptText="NO Tlp PIC " unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXTextArea fx:id="taRemarks" focusColor="WHITE" labelFloat="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="189.0" promptText="Remark Saat Visit" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                  <JFXDatePicker fx:id="tfTglVisit" defaultColor="#00d4ff" promptText="Tgl Visit" />
                </children>
             </GridPane>
             <HBox maxHeight="40.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="600.0">
                <children>
-                  <JFXButton maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" ripplerFill="#5ac8fa" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="Save" textFill="WHITE" HBox.hgrow="ALWAYS" />
-                  <JFXButton maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" ripplerFill="#5ac8fa" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="Cancel" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                  <JFXButton fx:id="btnSaveFkm" maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" ripplerFill="#5ac8fa" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="Save" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                  <JFXButton fx:id="btnCancelFkm" maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" ripplerFill="#5ac8fa" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="Cancel" textFill="WHITE" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
          </children>
