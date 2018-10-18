@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="500.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane maxHeight="40.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-border-color: white; -fx-background-color: #24d0f4; -fx-background-radius: 15; -fx-border-radius: 10;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="217.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Form Input FKM">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <VBox alignment="BOTTOM_CENTER" layoutY="48.0" maxHeight="452.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="600.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2px; -fx-border-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="48.0">
+         <children>
+            <GridPane alignment="CENTER_LEFT" hgap="10.0" vgap="15.0" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXComboBox focusColor="WHITE" labelFloat="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Nama TSF" unFocusColor="WHITE" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </JFXComboBox>
+                  <JFXTimePicker defaultColor="#00d4ff" promptText="Jam Visit" GridPane.columnIndex="1" />
+                  <JFXComboBox focusColor="WHITE" labelFloat="true" layoutX="156.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Tindakan" unFocusColor="WHITE" GridPane.columnIndex="2" />
+                  <JFXComboBox focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Hasil Kunj." unFocusColor="WHITE" GridPane.columnIndex="3" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="31.0" promptText="No Log FKM" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="156.0" layoutY="113.0" promptText="S/N Terpasang" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="113.0" promptText="Simcard Terpasang" unFocusColor="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="113.0" promptText="S/N Lama" unFocusColor="WHITE" GridPane.rowIndex="2" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="195.0" promptText="Simcard Lama" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXComboBox focusColor="WHITE" labelFloat="true" layoutX="302.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="135.0" promptText="Tipe Paperroll" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="31.0" promptText="Qty Paperroll" unFocusColor="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="448.0" layoutY="195.0" promptText="PIC Name" unFocusColor="WHITE" GridPane.rowIndex="3" />
+                  <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="277.0" promptText="NO Tlp PIC " unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXTextArea focusColor="WHITE" labelFloat="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="189.0" promptText="Remark Saat Visit" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                  <JFXDatePicker defaultColor="#00d4ff" promptText="Tgl Visit" />
+               </children>
+            </GridPane>
+            <HBox maxHeight="40.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <JFXButton maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" ripplerFill="#5ac8fa" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="Save" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                  <JFXButton maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" ripplerFill="#5ac8fa" style="-fx-background-radius: 0; -fx-border-radius: 0;" text="Cancel" textFill="WHITE" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

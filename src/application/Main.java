@@ -19,7 +19,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-       // primaryStage.initStyle(TRANSPARENT);
+        //primaryStage.initStyle(TRANSPARENT);
 
         Main.stage = primaryStage;
         Main.stage.setTitle("Karawang");
@@ -61,6 +61,14 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/Admin.fxml"));
         BorderPane mainItem = loader.load();
+        mainlayout.setCenter(mainItem);
+
+    }
+    
+    public static void showInputFkm() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/input_fkm.fxml"));
+        AnchorPane mainItem = loader.load();
         mainlayout.setCenter(mainItem);
 
     }
