@@ -35,7 +35,7 @@ public class LoginController {
     void goLogin() throws IOException {
         try {
             if (loginModel.isLoginValid(usernametf.getText(), passwordtf.getText())) {
-                Main.showInputFkm();
+                Main.showAdmin();
             } else {
                 errorLogin.setText("Error! Invalid Username or Password");
             }

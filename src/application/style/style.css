@@ -21,10 +21,9 @@
     -fx-background-color: rgba (37, 38, 38, 0.5)
 }
 
-.button:hover {
-    -fx-background-color: #0d0000;
-   
-}
+//.button:hover {
+//    -fx-background-color: #0d0000;
+//}
 
 .green {
     -fx-background-color:
