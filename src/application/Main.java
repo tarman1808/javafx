@@ -70,9 +70,15 @@ public class Main extends Application {
         loader.setLocation(Main.class.getResource("view/input_fkm.fxml"));
         AnchorPane mainItem = loader.load();
         mainlayout.setCenter(mainItem);
-
     }
 
+    public static void showHome() throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/Home.fxml"));
+        AnchorPane mainItem = loader.load();
+        mainlayout.setCenter(mainItem);
+    }
+        
     public static void Main(String[] args) {
         launch(args);
     }
